@@ -13,8 +13,7 @@ RUN dotnet publish src/AiDevAssistant.csproj -c Release -o /app /p:UseAppHost=fa
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 
-# Non-root user
-RUN groupadd -r app && useradd -r -g app app
+# Non-root user 'app' already exists in base image
 COPY --from=build /app .
 RUN chown -R app:app /app
 USER app
