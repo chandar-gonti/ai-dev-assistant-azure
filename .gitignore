@@ -1,0 +1,63 @@
+# Build outputs
+bin/
+obj/
+out/
+*.user
+*.suo
+*.userprefs
+*.dll
+*.pdb
+*.exe
+
+# Visual Studio
+.vs/
+*.swp
+*.cache
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+
+# Azure / secrets
+appsettings.Development.json
+appsettings.Local.json
+*.pubxml
+*.azurePubxml
+PublishProfiles/
+secrets.json
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Bicep
+*.bicepparam.local.json
+
+# Docker
+.docker/
+
+# Environment
+.env
+.env.local

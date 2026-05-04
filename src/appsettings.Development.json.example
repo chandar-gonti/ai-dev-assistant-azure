@@ -1,0 +1,22 @@
+{
+  "_comment": "Copy this file to appsettings.Development.json and fill in real values. The real file is gitignored.",
+  "AzureOpenAI": {
+    "Endpoint": "https://your-openai.openai.azure.com/",
+    "DeploymentName": "gpt-4o",
+    "EmbeddingDeployment": "text-embedding-3-large"
+  },
+  "AzureAISearch": {
+    "Endpoint": "https://your-search.search.windows.net",
+    "IndexName": "code-snippets"
+  },
+  "CosmosDb": {
+    "Endpoint": "https://your-cosmos.documents.azure.com:443/",
+    "DatabaseName": "DevAssistant"
+  },
+  "ContentSafety": {
+    "Endpoint": "https://your-content-safety.cognitiveservices.azure.com/"
+  },
+  "ApplicationInsights": {
+    "ConnectionString": "InstrumentationKey=..."
+  }
+}
