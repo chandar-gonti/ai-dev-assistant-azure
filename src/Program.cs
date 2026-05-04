@@ -12,10 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Host.UseSerilog((context, config) =>
     config.ReadFrom.Configuration(context.Configuration)
           .Enrich.FromLogContext()
-          .WriteTo.Console()
-          .WriteTo.ApplicationInsights(
-              context.Configuration["ApplicationInsights:ConnectionString"],
-              Serilog.Sinks.ApplicationInsights.TelemetryConverters.TraceTelemetryConverter));
+          .WriteTo.Console());
 
 // Use Managed Identity in Azure, DefaultAzureCredential locally
 var credential = new DefaultAzureCredential();
